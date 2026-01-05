@@ -9,7 +9,7 @@
 
 A smart shopping assistant that tracks items you want to buy, alerts you when prices drop, and finds similar alternatives using AI.
 
-## 🌟 Features
+## Features
 
 - **Wishlist Management** - Keep track of items you want to purchase
 - **Automated Price Monitoring** - Background service checks prices every 6 hours
@@ -18,7 +18,7 @@ A smart shopping assistant that tracks items you want to buy, alerts you when pr
 - **Price History Charts** - Visualize price trends over time
 - **Email Notifications** - Beautiful HTML emails for price drops and alternatives
 
-## 🏗️ Tech Stack & Design Decisions
+## Tech Stack & Design Decisions
 
 ### Backend
 - **FastAPI**: Modern, fast Python web framework with automatic API documentation
@@ -55,7 +55,7 @@ A smart shopping assistant that tracks items you want to buy, alerts you when pr
 - ✅ SMTP: Universal, works with any provider
 - ❌ Dedicated APIs: Faster but vendor lock-in
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 price-tracker/
@@ -81,7 +81,7 @@ price-tracker/
     └── vite.config.ts
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.10+
@@ -150,7 +150,7 @@ Frontend will be available at `http://localhost:3000`
 npm run build
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -175,7 +175,7 @@ NOTIFICATION_EMAIL=recipient@example.com
 2. Generate App Password: https://myaccount.google.com/apppasswords
 3. Use the app password in `SMTP_PASSWORD`
 
-## 📚 API Documentation
+## API Documentation
 
 ### Items
 - `GET /items` - List all tracked items
@@ -196,7 +196,7 @@ NOTIFICATION_EMAIL=recipient@example.com
 - `GET /items/{id}/better-deals` - Find similar items with better prices
 - `POST /items/{id}/find-alternatives` - Trigger similarity check and create alerts
 
-## 🎯 Features in Detail
+## Features in Detail
 
 ### 1. Automated Price Monitoring
 - Background scheduler runs every 6 hours
@@ -221,7 +221,7 @@ NOTIFICATION_EMAIL=recipient@example.com
 - Track price trends over time
 - Identify best time to buy
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Price scraping fails
 - Websites have different HTML structures
@@ -238,21 +238,19 @@ NOTIFICATION_EMAIL=recipient@example.com
 - Check API quota and billing
 - Features gracefully degrade if API unavailable
 
-## 📈 Future Enhancements
+## Future Enhancements
 
-- [ ] User authentication and multi-user support
-- [ ] Mobile app (React Native)
-- [ ] Browser extension for quick adds
-- [ ] More e-commerce site support
-- [ ] Push notifications
-- [ ] Price drop predictions using ML
-- [ ] Social sharing of deals
-- [ ] Wishlist sharing and gifting
+See [FUTURE_IMPROVEMENTS.md](FUTURE_IMPROVEMENTS.md) for a comprehensive roadmap of planned features including:
+- User authentication and multi-user support
+- Enhanced web scraping with Playwright
+- Mobile app and browser extension
+- Advanced analytics and ML-based predictions
+- Performance optimizations and scalability improvements
 
-## 📄 License
+## License
 
 MIT
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! Please open an issue or PR.
